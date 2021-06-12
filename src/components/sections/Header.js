@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Flex, Button, Box, useColorMode, IconButton, useColorModeValue} from '@chakra-ui/react'
+import {Flex, Button, Box, useColorMode, IconButton, useColorModeValue, Tooltip} from '@chakra-ui/react'
 import {SunIcon, MoonIcon} from "@chakra-ui/icons"
 import {usePage} from "../../globalState"
 import {Home} from "react-ionicons"
@@ -32,7 +32,9 @@ export default function Header() {
       </Button>
       ))}
     </Flex>
-    <IconButton position="fixed" right={0} m={3} aria-label="Toggle Darkmode" icon={colorMode === "light" ? <SunIcon/> : <MoonIcon/>} onClick={toggleColorMode}/>
+    <Tooltip label={colorMode === "light" ? "Toggle Darkmode?" : "Toggle Lightmode?"}>
+      <IconButton position="fixed" right={0} m={3} aria-label="Toggle Darkmode" icon={colorMode === "light" ? <SunIcon/> : <MoonIcon/>} onClick={toggleColorMode}/>
+    </Tooltip>
     </>
   )
 }
