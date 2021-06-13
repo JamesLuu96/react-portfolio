@@ -17,7 +17,8 @@ export default function Header() {
       flex="row" 
       wrap="wrap" 
       position="sticky" 
-      top={0} 
+      top={0}
+      mb={10} 
       css={{ backdropFilter: 'blur(20px)' }}>
       {categories.map((category, i)=>(
       <Button 
