@@ -10,6 +10,7 @@ export default function FilterButton({frameworkName, filterProject, setFilterPro
             setFilterProject(old=>[...old, frameworkName])
         }
     }
+    console.log(filterProject)
     return (
         <>
         {filterProject.includes(frameworkName) ? 

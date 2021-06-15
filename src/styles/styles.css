@@ -1,0 +1,23 @@
+.hoverBorder:hover{
+    cursor: pointer;
+    border-image:linear-gradient(to right, #68D391, #3182CE) 100;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.hoverBackground:hover{
+    cursor: pointer;
+    background-color: linear-gradient(to right, #68D391, #3182CE) 100;
+}
+
+.hoverColor:hover svg{
+    cursor: pointer;
+    fill: rgb(121, 57, 163);
+    color: #68D391;
+}
+
+.hoverLinkedin:hover svg{
+    cursor: pointer;
+    fill: rgb(39, 64, 146);
+    color: #68D391;
+}

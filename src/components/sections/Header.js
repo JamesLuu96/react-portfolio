@@ -9,9 +9,13 @@ export default function Header() {
   const { colorMode, toggleColorMode } = useColorMode()
   const {currentPage, setCurrentPage} = usePage()
   const categories = ['Home', 'Projects', 'About Me', 'Resume']
+  const green = "linear(to-r, green.300, blue.500)"
   return (
     <>
-    <Box bgGradient="linear(to-r, green.300, blue.500)" w="100%" h="4px" mb="20px"/>
+    <Tooltip label={colorMode === "light" ? "Toggle Darkmode?" : "Toggle Lightmode?"}  >
+      <IconButton position="fixed" right={0} m={3} zIndex={11} aria-label="Toggle Darkmode" icon={colorMode === "light" ? <SunIcon/> : <MoonIcon/>} onClick={toggleColorMode}/>
+    </Tooltip>
+    <Box bgGradient={green} w="100%" h="4px" mb="20px"/>
     <Flex 
       justify="center" 
       flex="row" 
@@ -19,12 +23,14 @@ export default function Header() {
       position="sticky" 
       top={0}
       mb={10} 
-      css={{ backdropFilter: 'blur(20px)' }}>
+      css={{ backdropFilter: 'blur(20px)' }}
+      zIndex="10"  
+    >
       {categories.map((category, i)=>(
       <Button 
         key={i}
         m={3}
-        bgGradient={ currentPage === category ? 'linear(to-r, green.300, blue.500)' : undefined } 
+        bgGradient={ currentPage === category ? green : undefined } 
         color={currentPage === category ? "white": undefined}
         {...(currentPage === category ? {_hover: {bgGradient: 'linear(to-r, blue.400, green.200)'}} : {})}
         onClick={()=>setCurrentPage(category)}
@@ -33,9 +39,6 @@ export default function Header() {
       </Button>
       ))}
     </Flex>
-    <Tooltip label={colorMode === "light" ? "Toggle Darkmode?" : "Toggle Lightmode?"}>
-      <IconButton position="fixed" right={0} m={3} aria-label="Toggle Darkmode" icon={colorMode === "light" ? <SunIcon/> : <MoonIcon/>} onClick={toggleColorMode}/>
-    </Tooltip>
     </>
   )
 }
