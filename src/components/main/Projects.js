@@ -26,7 +26,9 @@ export default function Projects() {
             tags: ["React.js", "Next.js", "Javascript", "ChakraUI"],
             isNew: true, 
             isFeatured: true, 
-            projectImage: "https://i.imgur.com/soNxKJ3.png"
+            projectImage: "https://i.imgur.com/soNxKJ3.png",
+            github: "https://github.com/JamesLuu96/react-portfolio",
+            liveWebsite: "https://www.jameskluu.dev/"
         },
         {
             projectName: "ZingChat 2.0",
