@@ -19,7 +19,7 @@ export default function Projects() {
         "Express"
     ]
     const projects = [
-        {projectName: "My Portfolio", tags: ["React.js", "Next.js", "Javascript", "ChakraUI"], isNew: true, isFeatured: true},
+        {projectName: "My Portfolio", tags: ["React.js", "Next.js", "Javascript", "ChakraUI"], isNew: true, isFeatured: true, projectImage: "https://i.imgur.com/soNxKJ3.png"},
         {projectName: "ZingChat 2.0", tags: ["React.js", "AntD", "Javascript", "Socket.io", "MongoDB", "GraphQL", "Apollo", "Express", "Nodejs"], isFeatured: true, github: "https://github.com/JamesLuu96/zing-chat", liveWebsite: "http://www.zing-chat.ga/", projectImage: "https://github.com/JamesLuu96/zing-chat/raw/master/app-screenshots/login.png"},
         {projectName: "ZingChat", tags: ["Javascript", "Handlebars", "Socket.io", "MySQL", "Nodejs", "Express"], github: "https://github.com/JamesLuu96/zing", liveWebsite: "https://zing-chat.herokuapp.com/login", projectImage: "https://user-images.githubusercontent.com/73629983/114060350-e9af7200-985a-11eb-99b2-0af3d081f204.png"},
         {projectName: "SimpleJack", tags: ["Javascript", "CSS", "Bulma", "jQuery", "API", "Nodejs", "Express"], projectImage: "https://user-images.githubusercontent.com/73920328/106347184-39355880-6282-11eb-8b5f-5e877a235643.png", github: "https://github.com/JamesLuu96/simple-jack", liveWebsite: "https://jamesluu96.github.io/simple-jack/"}
