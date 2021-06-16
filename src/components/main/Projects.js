@@ -19,10 +19,43 @@ export default function Projects() {
         "Express"
     ]
     const projects = [
-        {projectName: "My Portfolio", tags: ["React.js", "Next.js", "Javascript", "ChakraUI"], isNew: true, isFeatured: true, projectImage: "https://i.imgur.com/soNxKJ3.png"},
-        {projectName: "ZingChat 2.0", tags: ["React.js", "AntD", "Javascript", "Socket.io", "MongoDB", "GraphQL", "Apollo", "Express", "Nodejs"], isFeatured: true, github: "https://github.com/JamesLuu96/zing-chat", liveWebsite: "http://www.zing-chat.ga/", projectImage: "https://github.com/JamesLuu96/zing-chat/raw/master/app-screenshots/login.png"},
-        {projectName: "ZingChat", tags: ["Javascript", "Handlebars", "Socket.io", "MySQL", "Nodejs", "Express"], github: "https://github.com/JamesLuu96/zing", liveWebsite: "https://zing-chat.herokuapp.com/login", projectImage: "https://user-images.githubusercontent.com/73629983/114060350-e9af7200-985a-11eb-99b2-0af3d081f204.png"},
-        {projectName: "SimpleJack", tags: ["Javascript", "CSS", "Bulma", "jQuery", "API", "Nodejs", "Express"], projectImage: "https://user-images.githubusercontent.com/73920328/106347184-39355880-6282-11eb-8b5f-5e877a235643.png", github: "https://github.com/JamesLuu96/simple-jack", liveWebsite: "https://jamesluu96.github.io/simple-jack/"}
+        {
+            projectName: "My Portfolio",
+            projectDescription: "This very app you are currently on! This app is made to showcase my projects and leave an everlasting mark on those who view it!",
+            projectThoughts: "This app was made completely from scratch making this site a very unique and personalized project!",
+            tags: ["React.js", "Next.js", "Javascript", "ChakraUI"],
+            isNew: true, 
+            isFeatured: true, 
+            projectImage: "https://i.imgur.com/soNxKJ3.png"
+        },
+        {
+            projectName: "ZingChat 2.0",
+            projectDescription: "This app is a real-time chat application where you can add friends and create rooms to socialize; recreated with React!",
+            projectThoughts: "This site is the successor of Zing-Chat, this time using React. It was very difficult integrating socket.io with React but the payoff was definitely worth it!",
+            tags: ["React.js", "AntD", "Javascript", "Socket.io", "MongoDB", "GraphQL", "Apollo", "Express", "Nodejs"],
+            isFeatured: true,
+            github: "https://github.com/JamesLuu96/zing-chat",
+            liveWebsite: "http://www.zing-chat.ga/",
+            projectImage: "https://github.com/JamesLuu96/zing-chat/raw/master/app-screenshots/login.png"
+        },
+        {
+            projectName: "ZingChat", 
+            projectDescription: "This app is a real-time chat application to socialize with users in customized rooms with different cool effects!",
+            projectThoughts: "This site was my introduction with using Socket.io and that’s when I fell in love with it! I love how you can implement real time client interactions and can’t wait to use this feature more in the future!",
+            tags: ["Javascript", "Handlebars", "Socket.io", "MySQL", "Nodejs", "Express"], 
+            github: "https://github.com/JamesLuu96/zing", 
+            liveWebsite: "https://zing-chat.herokuapp.com/login", 
+            projectImage: "https://user-images.githubusercontent.com/73629983/114060350-e9af7200-985a-11eb-99b2-0af3d081f204.png"
+        },
+        {
+            projectName: "SimpleJack", 
+            projectDescription: "This app takes the simple game of blackjack and puts it on an entire new level where you take on the role of Gambit and fight off the Joker!",
+            projectThoughts: "My very first game I’ve created! I got very creative and carried away with adding a lot of features to make a simple game of blackjack have more in depth features!",
+            tags: ["Javascript", "CSS", "Bulma", "jQuery", "API", "Nodejs", "Express"], 
+            projectImage: "https://user-images.githubusercontent.com/73920328/106347184-39355880-6282-11eb-8b5f-5e877a235643.png", 
+            github: "https://github.com/JamesLuu96/simple-jack", 
+            liveWebsite: "https://jamesluu96.github.io/simple-jack/"
+        }
     ]
     function clearFilter(){
         setFilterProject([])

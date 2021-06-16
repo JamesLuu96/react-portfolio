@@ -1,9 +1,23 @@
 import React from 'react'
-import {useDisclosure, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, ModalFooter, Box} from '@chakra-ui/react'
+import {
+    useDisclosure, 
+    Button, 
+    Modal, 
+    ModalOverlay, 
+    ModalContent, 
+    ModalHeader, 
+    ModalBody, 
+    ModalCloseButton, 
+    ModalFooter, 
+    Box,
+    Flex,
+    Text,
+    Badge
+} from '@chakra-ui/react'
 import { LogoGithub, OpenOutline} from 'react-ionicons'
 
 export default function ProjectModal({children, project}) {
-    const {projectImage, projectName, github, liveWebsite, tags} = project
+    const {projectImage, projectName, github, liveWebsite, tags, projectThoughts, projectDescription} = project
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <Box
@@ -21,8 +35,17 @@ export default function ProjectModal({children, project}) {
             <ModalContent>
             <ModalHeader>{projectName}</ModalHeader>
             <ModalCloseButton />
-            <ModalBody>
-                Body
+            <ModalBody textAlign="center">
+                <Text fontSize="24px" fontWeight="bold" color="#68D391">Description</Text>
+                <Text mb="15px">{projectDescription}</Text>
+                <Text fontSize="24px" fontWeight="bold" color="#68D391">My Thoughts</Text>
+                <Text mb="15px">{projectThoughts}</Text>
+                <Text fontSize="24px" fontWeight="bold" color="#68D391">Tags</Text>
+                <Flex justifyContent="center" flexDir="row" wrap="wrap" mb="15px">
+                    {tags.map((tag, i)=>(
+                        <Badge m={3} key="i">{tag}</Badge>
+                    ))}
+                </Flex>
             </ModalBody>
 
             <ModalFooter>

@@ -8,7 +8,7 @@ import { LogoGithub, OpenOutline} from 'react-ionicons'
 export default function Project({project}) {
     const color = useColorModeValue('black', 'white')
     const green = "linear(to-r, green.300, blue.500)"
-    const {projectImage, projectName, github, liveWebsite, tags, isFeatured, isNew} = project
+    const {projectImage, projectName, github, liveWebsite, tags, isFeatured, isNew, projectDescription} = project
 
     return (
         <ProjectModal project={project}>
@@ -37,7 +37,10 @@ export default function Project({project}) {
                             <OpenOutline color={color} className="hoverColor" style={{margin: "5px"}} onClick={(e)=>{e.stopPropagation();window.open(liveWebsite, "_blank")}}/>
                         </Box>
                     </Tooltip>
+
                 </Flex>
+                    <Text color="#68D391">Description: </Text>
+                    <Text overflow="scroll" height="100px">{projectDescription}</Text>
             </Flex>
         </ProjectModal>
     )
