@@ -16,8 +16,28 @@
     color: #68D391;
 }
 
+.hoverInfo:hover svg{
+    cursor: pointer;
+    fill: #413f26;
+    color: #413f26;
+}
+
 .hoverLinkedin:hover svg{
     cursor: pointer;
     fill: rgb(39, 64, 146);
     color: #68D391;
+}
+
+.flipParent:hover {
+    cursor: pointer;
+}
+
+.flipParent .flip{
+    transition: transform 0.5s;
+    transform: scale(-1,1);
+}
+
+.flipParent:hover .flip{
+    transition: transform 0.5s;
+    transform: scale(1,1);
 }

@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import {Accordion, Flex, Text, Button, AccordionItem, AccordionPanel, AccordionButton, AccordionIcon, Box, Tooltip} from '@chakra-ui/react'
 import FilterButton from '../FilterButton'
 import Project from '../Project'
+import {InformationCircleOutline} from 'react-ionicons'
+
 
 export default function Projects() {
     const [filterProject, setFilterProject] = useState([])
@@ -10,13 +12,17 @@ export default function Projects() {
         "Javascript",
         "GraphQL",
         "MongoDB",
-        "MySQL"
+        "MySQL",
+        "Socket.io",
+        "jQuery",
+        "Nodejs",
+        "Express"
     ]
     const projects = [
-        {link: "https://bit.ly/sage-adebayo", name: "Placeholder Project", tags: ["React.js", "Javascript"]},
-        {link: "https://bit.ly/sage-adebayo", name: "Placeholder Project", tags: ["GraphQL"]},
-        {link: "https://bit.ly/sage-adebayo", name: "Placeholder Project", tags: ["Javascript"]},
-        {link: "https://bit.ly/sage-adebayo", name: "Placeholder Project", tags: ["MongoDB"]}
+        {projectName: "My Portfolio", tags: ["React.js", "Next.js", "Javascript", "ChakraUI"], isNew: true, isFeatured: true},
+        {projectName: "ZingChat 2.0", tags: ["React.js", "AntD", "Javascript", "Socket.io", "MongoDB", "GraphQL", "Apollo", "Express", "Nodejs"], isFeatured: true, github: "https://github.com/JamesLuu96/zing-chat", liveWebsite: "https://zing2.herokuapp.com/", projectImage: "https://github.com/JamesLuu96/zing-chat/raw/master/app-screenshots/login.png"},
+        {projectName: "ZingChat", tags: ["Javascript", "Handlebars", "Socket.io", "MySQL", "Nodejs", "Express"], github: "https://github.com/JamesLuu96/zing", liveWebsite: "https://zing-chat.herokuapp.com/login", projectImage: "https://user-images.githubusercontent.com/73629983/114060350-e9af7200-985a-11eb-99b2-0af3d081f204.png"},
+        {projectName: "SimpleJack", tags: ["Javascript", "CSS", "Bulma", "jQuery", "API", "Nodejs", "Express"], projectImage: "https://user-images.githubusercontent.com/73920328/106347184-39355880-6282-11eb-8b5f-5e877a235643.png", github: "https://github.com/JamesLuu96/simple-jack", liveWebsite: "https://jamesluu96.github.io/simple-jack/"}
     ]
     function clearFilter(){
         setFilterProject([])
@@ -40,9 +46,16 @@ export default function Projects() {
             flexDir="column"
             flexWrap="wrap"
         >
-            <Text fontSize="32px" mb="20px">
-                My Projects
-            </Text>
+            <Flex>
+                <Text fontSize="32px" mb="20px">
+                    My Projects
+                </Text>
+                <Tooltip hasArrow placement="top" label="Click on a project to see more information!">
+                    <Box height="fit-content">
+                        <InformationCircleOutline color="#68D391" className="hoverInfo"/>
+                    </Box>
+                </Tooltip>
+            </Flex>
 
             <Accordion allowToggle w={"50%"} onChange={i=> i===-1?clearFilter():undefined}>
                 <AccordionItem >
@@ -75,7 +88,7 @@ export default function Projects() {
                 w="80vw"
             >
                 {filterProjects().map((project, i)=>(
-                    <Project link={project.link} name={project.name} key={i}/>
+                    <Project project={project} key={i}/>
                 ))}
             </Flex>
 
