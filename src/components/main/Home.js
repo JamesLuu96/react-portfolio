@@ -9,8 +9,9 @@ export default function Home() {
             <Tooltip hasArrow placement="top-end" label="Thanks for stopping by!">
                 <Image
                     borderRadius="full"
-                    boxSize="150px"
-                    src="https://i.imgur.com/5IeGV9K.jpg"
+                    // boxSize="350px"
+                    maxWidth="350px"
+                    src="https://i.imgur.com/19HrFcu.jpg"
                     alt="James Luu"
                     m="0 auto"
                 />

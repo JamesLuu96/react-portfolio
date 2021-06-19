@@ -47,14 +47,14 @@ export default function Projects() {
             tags: ["Javascript", "Handlebars", "Socket.io", "MySQL", "Nodejs", "Express"], 
             github: "https://github.com/JamesLuu96/zing", 
             liveWebsite: "https://zing-chat.herokuapp.com/login", 
-            projectImage: "https://user-images.githubusercontent.com/73629983/114060350-e9af7200-985a-11eb-99b2-0af3d081f204.png"
+            projectImage: "https://i.imgur.com/YOWSP8r.png"
         },
         {
             projectName: "SimpleJack", 
             projectDescription: "This app takes the simple game of blackjack and puts it on an entire new level where you take on the role of Gambit and fight off the Joker!",
             projectThoughts: "My very first game I’ve created! I got very creative and carried away with adding a lot of features to make a simple game of blackjack have more in depth features!",
             tags: ["Javascript", "CSS", "Bulma", "jQuery", "API", "Nodejs", "Express"], 
-            projectImage: "https://user-images.githubusercontent.com/73920328/106347184-39355880-6282-11eb-8b5f-5e877a235643.png", 
+            projectImage: "https://i.imgur.com/MdsSUQ1.png", 
             github: "https://github.com/JamesLuu96/simple-jack", 
             liveWebsite: "https://jamesluu96.github.io/simple-jack/"
         }
