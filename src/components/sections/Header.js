@@ -12,7 +12,7 @@ export default function Header() {
   const color = useColorModeValue('black', 'white')
   const { colorMode, toggleColorMode } = useColorMode()
   const {currentPage, setCurrentPage} = usePage()
-  const categories = ['Home', 'Projects', 'About Me', 'Resume']
+  const categories = ['Home', 'Projects', 'About Me', 'Contact']
   const green = "linear(to-r, green.300, blue.500)"
   return (
     <>

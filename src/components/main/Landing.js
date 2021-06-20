@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react'
 import Header from '../sections/Header'
 import Footer from '../sections/Footer'
-
+import { Flex } from '@chakra-ui/react'
 export default function Landing(props) {
     const footerRef = useRef()
     return (

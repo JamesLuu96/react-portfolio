@@ -42,7 +42,7 @@ export default function Projects() {
         },
         {
             projectName: "ZingChat", 
-            projectDescription: "This app is a real-time chat application to socialize with users in customized rooms with different cool effects!",
+            projectDescription: "This app is a real-time chat application to socialize with users in customizable rooms with unique effects!",
             projectThoughts: "This site was my introduction with using Socket.io and that’s when I fell in love with it! I love how you can implement real time client interactions and can’t wait to use this feature more in the future!",
             tags: ["Javascript", "Handlebars", "Socket.io", "MySQL", "Nodejs", "Express"], 
             github: "https://github.com/JamesLuu96/zing", 
