@@ -9,6 +9,7 @@ export default function Projects() {
     const [filterProject, setFilterProject] = useState([])
     const frameworks = [
         "React.js",
+        "Next.js",
         "Javascript",
         "GraphQL",
         "MongoDB",
@@ -21,19 +22,19 @@ export default function Projects() {
     const projects = [
         {
             projectName: "My Portfolio",
-            projectDescription: "This very app you are currently on! This app is made to showcase my projects and leave an everlasting mark on those who view it!",
+            projectDescription: "This very app you are on! A website to showcase my projects and connect with more people.",
             projectThoughts: "This app was made completely from scratch making this site a very unique and personalized project!",
             tags: ["React.js", "Next.js", "Javascript", "ChakraUI"],
             isNew: true, 
             isFeatured: true, 
-            projectImage: "https://i.imgur.com/OQR7LfE.png",
+            projectImage: "https://i.imgur.com/GyUhtJX.png",
             github: "https://github.com/JamesLuu96/react-portfolio",
             liveWebsite: "https://www.jameskluu.dev/"
         },
         {
             projectName: "ZingChat 2.0",
             projectDescription: "This app is a real-time chat application where you can add friends and create rooms to socialize; recreated with React!",
-            projectThoughts: "This site is the successor of Zing-Chat, this time using React. It was very difficult integrating socket.io with React but the payoff was definitely worth it!",
+            projectThoughts: "This site is the successor of Zing-Chat, this time using React. It was difficult integrating socket.io with React but the payoff was definitely worth it!",
             tags: ["React.js", "AntD", "Javascript", "Socket.io", "MongoDB", "GraphQL", "Apollo", "Express", "Nodejs"],
             isFeatured: true,
             github: "https://github.com/JamesLuu96/zing-chat",
@@ -51,13 +52,31 @@ export default function Projects() {
         },
         {
             projectName: "SimpleJack", 
-            projectDescription: "This app takes the simple game of blackjack and puts it on an entire new level where you take on the role of Gambit and fight off the Joker!",
+            projectDescription: "This app takes the game of blackjack and puts a twist on it where you fight off the Joker.",
             projectThoughts: "My very first game I’ve created! I got very creative and carried away with adding a lot of features to make a simple game of blackjack have more in depth features!",
             tags: ["Javascript", "CSS", "Bulma", "jQuery", "API", "Nodejs", "Express"], 
             projectImage: "https://i.imgur.com/MdsSUQ1.png", 
             github: "https://github.com/JamesLuu96/simple-jack", 
             liveWebsite: "https://jamesluu96.github.io/simple-jack/"
-        }
+        },
+        {
+            projectName: "Tech Blog", 
+            projectDescription: "A tech forum where you can like and comment on your favorite posts.",
+            projectThoughts: "This website helped me learn how relational database can be helpful to create and connect users and posts.",
+            tags: ['Handlebars', 'MySQL', 'Sequelize', 'Javascript', 'BCrypt', 'Express'], 
+            projectImage: "https://i.imgur.com/5iB3Xfa.png", 
+            github: "https://github.com/JamesLuu96/tech-blog", 
+            liveWebsite: "https://tech-blog-james-luu.herokuapp.com/"
+        },
+        {
+            projectName: "WeatherDash", 
+            projectDescription: "A simple website to check current weather forecast.",
+            projectThoughts: "A simple frontend website to learn API calls.",
+            tags: ['Javascript'], 
+            projectImage: "https://i.imgur.com/opTtf6P.png", 
+            github: "https://github.com/JamesLuu96/weather-dashboard", 
+            liveWebsite: "https://jamesluu96.github.io/weather-dashboard/"
+        },
     ]
     function clearFilter(){
         setFilterProject([])

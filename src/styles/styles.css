@@ -1,3 +1,5 @@
+
+
 .hoverBorder:hover{
     cursor: pointer;
     border-image:linear-gradient(to right, #68D391, #3182CE) 100;

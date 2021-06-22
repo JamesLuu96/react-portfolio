@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <>
     <Tooltip label={colorMode === "light" ? "Toggle Darkmode?" : "Toggle Lightmode?"}  >
-      <IconButton position="fixed" right={0} m={3} zIndex={11} aria-label="Toggle Darkmode" icon={colorMode === "light" ? <SunIcon/> : <MoonIcon/>} onClick={toggleColorMode}/>
+      <IconButton borderRadius="var(--chakra-radii-md)" position="fixed" right={0} m={3} zIndex={11} aria-label="Toggle Darkmode" icon={colorMode === "light" ? <SunIcon/> : <MoonIcon/>} onClick={toggleColorMode}/>
     </Tooltip>
     <Box bgGradient={green} w="100%" h="4px" mb="20px"/>
     <Flex 

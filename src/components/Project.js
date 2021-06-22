@@ -23,7 +23,7 @@ export default function Project({project}) {
                     src={projectImage}
                     alt={projectName}
                 />
-                <Flex>
+                <Flex justifyContent="center" alignItems="center">
                     <Text margin="5px">{projectName}:</Text>
                    
                     <Tooltip label="View Github">
