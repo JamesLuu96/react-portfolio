@@ -21,7 +21,7 @@ export default function Footer({footerRef}) {
             <Text mt="20px" mb="10px">Stay connected to see what I'm up to!</Text>
             <Flex justify="center">
                 <Tooltip label="Github">
-                    <Box>
+                    <Box mr="2">
                         <LogoGithub color={color} className="hoverColor" onClick={()=>window.open("https://github.com/JamesLuu96", "_blank")}/>
                     </Box>                  
                 </Tooltip>
