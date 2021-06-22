@@ -40,7 +40,7 @@ export default function Project({project}) {
 
                 </Flex>
                     <Text color="#68D391">Description: </Text>
-                    <Text overflowY="scroll" height="100px">{projectDescription}</Text>
+                    <Text overflow="hidden" height="100px">{projectDescription}</Text>
             </Flex>
         </ProjectModal>
     )
