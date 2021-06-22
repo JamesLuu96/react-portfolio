@@ -33,7 +33,7 @@ export default function About() {
                         James Khoa Luu
                     </Text>
                     <Text mb="10px">
-                        A full-stack web developer with a background in networking offering experience in the development of advanced applications. Recently earning a certificate from the University of Texas at Austin for full-stack web development, with newly toned skills in React.js, JavaScript, and more. Known to deliver forward-thinking projects in an efficient manner with a strong focus on user experience and ease of interaction. Flexible to my surroundings and can offer an innovative perspective on the evolving ways of modern technology. Eager to apply my skills to an accelerated and solution-oriented team to create impactful applications.
+                    A full-stack web developer with a background in networking offering experience in the development of advanced applications. Recently earning a certificate in Full-Stack Web Development from the University of Texas at Austin, with skills in React.js, JavaScript, and MongoDB. Known to deliver forward-thinking projects in an efficient manner with a strong focus on user experience and ease of interaction. Flexible to my surroundings and can offer an innovative perspective on the evolving ways of modern technology. Eager to apply my skills to an accelerated and solution-oriented team to create impactful applications.
                     </Text>
                     <a href="./JamesKhoaLuu_Resume.pdf" download>
                         <Button>
