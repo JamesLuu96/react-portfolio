@@ -39,8 +39,8 @@ export default function Project({project}) {
                     </Tooltip>
 
                 </Flex>
-                    <Text color="#68D391">Description: </Text>
-                    <Text overflow="hidden" height="100px">{projectDescription}</Text>
+                <Text color="#68D391">Description: </Text>
+                <Text height="100px">{projectDescription}</Text>
             </Flex>
         </ProjectModal>
     )

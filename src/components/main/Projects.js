@@ -33,7 +33,7 @@ export default function Projects() {
         },
         {
             projectName: "ZingChat 2.0",
-            projectDescription: "This app is a real-time chat application where you can add friends and create rooms to socialize; recreated with React!",
+            projectDescription: "This app is a real-time chat application where you can add friends and create rooms to socialize; made with React!",
             projectThoughts: "This site is the successor of Zing-Chat, this time using React. It was difficult integrating socket.io with React but the payoff was definitely worth it!",
             tags: ["React.js", "AntD", "Javascript", "Socket.io", "MongoDB", "GraphQL", "Apollo", "Express", "Nodejs"],
             isFeatured: true,
