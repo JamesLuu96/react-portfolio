@@ -13,7 +13,9 @@ export default function About() {
         "Socket.io",
         "jQuery",
         "Nodejs",
-        "Express"
+        "Express",
+        "Socket.io",
+        "Jest"
     ]
     return (
         <>
