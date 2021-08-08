@@ -43,7 +43,8 @@ export default function Home() {
             <Box position="fixed" top="45%" left="50%" transform="translate(-50%, -50%)" width="500px" textAlign="center">
                 <Flex background={colorTitle} fontSize={{ base: '5xl', sm: '6xl', md: '7xl' }}  borderRadius="15px" justifyContent="center" className="flipParent" onClick={()=>handleClick()}>
                     <Text>JAMES</Text>
-                    <Text color={logoColor} className="flip">K</Text>
+                    <Text color={logoColor} className="flip" display={{base:"none", lg: "block"}}>K</Text>
+                    <Text color={logoColor} className="flipMobile" display={{base:"block", lg: "none"}}>K</Text>
                     <Text>LUU</Text>
                 </Flex>
                 <Text fontWeight="bold">Full-Stack Web Developer</Text>

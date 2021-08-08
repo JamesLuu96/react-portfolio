@@ -36,7 +36,7 @@ export default function Header() {
   const color = useColorModeValue('black', 'white')
   const { colorMode, toggleColorMode } = useColorMode()
   const {currentPage, setCurrentPage} = usePage()
-  const categories = ['Projects', 'About Me', 'Contact']
+  const categories = ['About Me','Projects', 'Contact']
   const green = "linear(to-r, green.300, blue.500)"
   const { isOpen, onOpen, onClose } = useDisclosure();
   
@@ -107,7 +107,8 @@ export default function Header() {
           <HStack spacing={8} alignItems={'center'}>
             <Flex fontSize="24px" fontWeight="bold" className="flipParent" onClick={(e)=>{setCurrentPage("Home");onClose(e)}}>
                 <Text>J</Text>
-                <Text className="flip" color={logoColor}>K</Text>
+                <Text color={logoColor} className="flip" display={{base:"none", lg: "block"}}>K</Text>
+                <Text color={logoColor} className="flipMobile" display={{base:"block", lg: "none"}}>K</Text>
                 <Text>L</Text>
             </Flex>
             <HStack

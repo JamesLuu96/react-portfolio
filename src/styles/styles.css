@@ -30,7 +30,7 @@
     color: #68D391;
 }
 
-.flipParent:hover {
+.flipParent:hover, .parentResponsive:hover {
     cursor: pointer;
 }
 
@@ -42,4 +42,15 @@
 .flipParent:hover .flip{
     transition: transform 0.5s;
     transform: scale(1,1);
+}
+
+.flipMobile {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    0%{transform: scale(1,1)}
+    50%{transform: scale(-1,1)}
 }
