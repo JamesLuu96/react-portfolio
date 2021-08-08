@@ -95,7 +95,7 @@ export default function Header() {
     </Flex> */}
     {/* <> */}
       <Box bgGradient={green} w="100%" h="4px"/>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position="sticky" top={0} mb={10} zIndex="10" >
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position="sticky" top={0} zIndex="10" >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}

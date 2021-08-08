@@ -39,7 +39,7 @@ export default function Home() {
       }
     }, [vantaEffect])
     return (
-        <Box ref={myRef} height="65vh" borderTop={`1px solid ${color}`}>
+        <Box ref={myRef} height="calc(100vh - 173px)" borderTop={`1px solid ${color}`}>
             <Box position="fixed" top="45%" left="50%" transform="translate(-50%, -50%)" width="500px" textAlign="center">
                 <Flex background={colorTitle} fontSize={{ base: '5xl', sm: '6xl', md: '7xl' }}  borderRadius="15px" justifyContent="center" className="flipParent" onClick={()=>handleClick()}>
                     <Text>JAMES</Text>
