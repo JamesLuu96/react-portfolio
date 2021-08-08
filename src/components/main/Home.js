@@ -41,7 +41,7 @@ export default function Home() {
     return (
         <Box ref={myRef} height="65vh" borderTop={`1px solid ${color}`}>
             <Box position="fixed" top="45%" left="50%" transform="translate(-50%, -50%)" width="500px" textAlign="center">
-                <Flex fontSize="82px" background={colorTitle} borderRadius="15px" justifyContent="center" className="flipParent" onClick={()=>handleClick()}>
+                <Flex background={colorTitle} fontSize={{ base: '5xl', sm: '6xl', md: '7xl' }}  borderRadius="15px" justifyContent="center" className="flipParent" onClick={()=>handleClick()}>
                     <Text>JAMES</Text>
                     <Text color={logoColor} className="flip">K</Text>
                     <Text>LUU</Text>
