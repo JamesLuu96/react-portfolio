@@ -47,7 +47,7 @@ export default function Home() {
                     <Text color={logoColor} className="flipMobile" display={{base:"block", lg: "none"}}>K</Text>
                     <Text>LUU</Text>
                 </Flex>
-                <Text fontWeight="bold">Full-Stack Web Developer</Text>
+                <Text fontWeight="bold">Full-Stack Web Developer!</Text>
             </Box>
         </Box>
     )
