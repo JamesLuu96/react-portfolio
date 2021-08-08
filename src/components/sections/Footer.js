@@ -16,6 +16,7 @@ export default function Footer({footerRef}) {
             // height="1.5rem"
             textAlign="center"
             borderTop="1px solid grey"
+            bg={useColorModeValue('gray.100', 'gray.900')}
             ref={footerRef}
         >
             <Text mt="20px" mb="10px">Stay connected to see what I'm up to!</Text>

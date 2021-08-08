@@ -99,7 +99,7 @@ export default function Header() {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon/> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
@@ -121,7 +121,7 @@ export default function Header() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <IconButton icon={colorMode === "light" ? <SunIcon/> : <MoonIcon/>} onClick={toggleColorMode}/>
+            {colorMode === "light" ? <SunIcon onClick={toggleColorMode} cursor="pointer"/> : <MoonIcon onClick={toggleColorMode} cursor="pointer"/>} 
           </Flex>
         </Flex>
 
