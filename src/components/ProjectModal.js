@@ -28,14 +28,15 @@ export default function ProjectModal({children, project}) {
         h="300px"
         margin="15px"
         className="hoverBorder"
-        onClick={onOpen}>
+        onClick={onOpen}
+        >
         {children}
-        <Modal isOpen={isOpen} onClose={onClose}>
+        <Modal isOpen={isOpen} onClose={onClose} >
             <ModalOverlay />
-            <ModalContent>
+            <ModalContent m="auto">
             <ModalHeader>{projectName}</ModalHeader>
             <ModalCloseButton />
-            <ModalBody textAlign="center">
+            <ModalBody textAlign="center" >
                 <Text fontSize="24px" fontWeight="bold" color="#68D391">Description</Text>
                 <Text mb="15px">{projectDescription}</Text>
                 <Text fontSize="24px" fontWeight="bold" color="#68D391">My Thoughts</Text>
