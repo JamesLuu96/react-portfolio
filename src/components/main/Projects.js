@@ -197,17 +197,29 @@ const Projects = () => {
             "Socket.io",
             "jQuery",
             "Nodejs",
-            "Express"
+            "Express",
+            "Gatsby",
+            "API"
         ]
 
   
   const slides = [
             {
+                projectName: "Wedding Website",
+                projectDescription: "A personal website to showcase the events and organize RSVP's for our guests.",
+                projectThoughts: "This application was a good way to learn how to implement Google's API to my custom form.",
+                tags: ["React.js", "Gatsby", "Javascript", "API"],
+                isNew: true, 
+                isFeatured: true, 
+                img: "https://i.imgur.com/hbBZhtq.png",
+                github: "https://github.com/JamesLuu96/",
+                liveWebsite: "https://linhandjames.com/"
+            },
+            {
                 projectName: "Portfolio",
                 projectDescription: "This very app you are on! A website to showcase my projects and connect with more people.",
                 projectThoughts: "This app was made completely from scratch making this site a very unique and personalized project!",
                 tags: ["React.js", "Next.js", "Javascript", "ChakraUI"],
-                isNew: true, 
                 isFeatured: true, 
                 img: "https://i.imgur.com/GyUhtJX.png",
                 github: "https://github.com/JamesLuu96/react-portfolio",
@@ -218,7 +230,6 @@ const Projects = () => {
                 projectDescription: "This app is a real-time chat application where you can add friends and create rooms to socialize; made with React!",
                 projectThoughts: "This site is the successor of Zing-Chat, this time using React. It was difficult integrating socket.io with React but the payoff was definitely worth it!",
                 tags: ["React.js", "AntD", "Javascript", "Socket.io", "MongoDB", "GraphQL", "Apollo", "Express", "Nodejs"],
-                isFeatured: true,
                 github: "https://github.com/JamesLuu96/zing-chat",
                 liveWebsite: "http://www.zing-chat.ga/",
                 img: "https://github.com/JamesLuu96/zing-chat/raw/master/app-screenshots/login.png"
